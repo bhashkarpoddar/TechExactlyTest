@@ -62,12 +62,6 @@ class ApplicationAdapter(private var items:MutableList<Applications>, private va
         notifyDataSetChanged()
     }
 
-    fun resetData(list: MutableList<Applications>){
-        items = list
-        filteredList = items
-        notifyDataSetChanged()
-    }
-
 
     override fun getFilter(): Filter {
         return object : Filter() {
