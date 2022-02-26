@@ -100,8 +100,9 @@ class ApplicationsFragment : Fragment() {
 
             }
 
-            override fun onSwitchSelected(position: Int, isCheck: Boolean) {
-                applicationList!![position].isChecked = isCheck
+            override fun onSwitchSelected(position: Int, item: Applications, isCheck: Boolean) {
+                val pos = applicationList!!.indexOf(item)
+                applicationList!![pos].isChecked = isCheck
                 binding.applicationsRv.post(Runnable {
                     adapter?.notifyItemChanged(position)
                 })

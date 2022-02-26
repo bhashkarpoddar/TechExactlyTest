@@ -44,7 +44,7 @@ class ApplicationAdapter(private var items:MutableList<Applications>, private va
             binding.switchToggle.setOnCheckedChangeListener { switch, isChecked ->
                 // Handle switch checked/unchecked
                 Log.d("TAG", "onCreate: $switch and $isChecked")
-                interaction.onSwitchSelected(adapterPosition, isChecked)
+                interaction.onSwitchSelected(adapterPosition, item, isChecked)
             }
 
             binding.executePendingBindings()
@@ -53,7 +53,7 @@ class ApplicationAdapter(private var items:MutableList<Applications>, private va
 
     interface Interaction {
         fun onItemSelected(position: Int, item: Applications)
-        fun onSwitchSelected(position: Int, isCheck: Boolean)
+        fun onSwitchSelected(position: Int, item: Applications, isCheck: Boolean)
     }
 
     fun setData(list: MutableList<Applications>){
@@ -75,9 +75,9 @@ class ApplicationAdapter(private var items:MutableList<Applications>, private va
                 Log.d("TAG", "performFiltering: $queryString ${filteredList?.size}")
                 val filterResults = Filter.FilterResults()
                 filterResults.values = if (queryString == null || queryString.isEmpty())
-                    filteredList
+                    items
                 else
-                    filteredList?.filter {
+                    items?.filter {
                         it.app_name.lowercase(Locale.getDefault()).contains(queryString)
                     }
                 return filterResults
