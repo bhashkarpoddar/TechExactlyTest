@@ -1,6 +1,6 @@
 package com.example.techexactlytest.data.dataSource.repository
 
-import com.example.techexactlytest.data.dataSource.ApiService
+import com.example.techexactlytest.data.dataSource.remote.ApiService
 
 class ApplicationRepository(private val apiService: ApiService) {
 

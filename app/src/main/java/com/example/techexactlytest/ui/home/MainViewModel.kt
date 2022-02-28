@@ -2,7 +2,7 @@ package com.example.techexactlytest.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.example.techexactlytest.data.dataSource.Resource
+import com.example.techexactlytest.data.dataSource.remote.Resource
 import com.example.techexactlytest.data.dataSource.repository.ApplicationRepository
 import kotlinx.coroutines.Dispatchers
 

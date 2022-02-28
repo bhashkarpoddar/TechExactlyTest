@@ -1,4 +1,4 @@
-package com.example.techexactlytest.data.dataSource
+package com.example.techexactlytest.data.dataSource.remote
 
 import com.example.techexactlytest.data.model.AppliactionsResponse
 import retrofit2.http.POST

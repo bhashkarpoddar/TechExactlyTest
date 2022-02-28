@@ -1,4 +1,4 @@
-package com.example.techexactlytest.data.dataSource
+package com.example.techexactlytest.data.dataSource.remote
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

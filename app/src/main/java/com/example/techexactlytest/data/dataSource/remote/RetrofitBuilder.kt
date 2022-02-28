@@ -1,4 +1,4 @@
-package com.example.techexactlytest.data.dataSource
+package com.example.techexactlytest.data.dataSource.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

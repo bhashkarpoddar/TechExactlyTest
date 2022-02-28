@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
-import com.example.techexactlytest.data.dataSource.RetrofitBuilder
-import com.example.techexactlytest.data.dataSource.Status.*
+import com.example.techexactlytest.data.dataSource.remote.RetrofitBuilder
+import com.example.techexactlytest.data.dataSource.remote.Status.*
 import com.example.techexactlytest.data.dataSource.repository.ApplicationRepository
 import com.example.techexactlytest.data.model.Applications
 import com.example.techexactlytest.databinding.FragmentApplicationsBinding

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.techexactlytest.R
-import com.example.techexactlytest.data.dataSource.RetrofitBuilder
+import com.example.techexactlytest.data.dataSource.remote.RetrofitBuilder
 import com.example.techexactlytest.data.dataSource.repository.ApplicationRepository
 import com.example.techexactlytest.databinding.ActivityMainBinding
 import com.example.techexactlytest.utils.getViewModel
